@@ -1,0 +1,39 @@
+.two-columns {
+  display: flex;
+}
+
+.column {
+  flex: 1;
+  margin: 0 35px;
+  margin-left: 30px;
+}
+
+.column p {
+  margin-top: 30px;
+  font-size: 18px;
+  /* Стили текста внутри колонок */
+}
+
+
+
+.justify-content-left{
+  margin-left: 30px;
+}
+
+mat-form-field{
+  width: 20%;
+}
+
+.user-info{
+  margin-left: 50%;
+}
+
+.justify-content-left{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+
+

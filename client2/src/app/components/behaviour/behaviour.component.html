@@ -1,0 +1,66 @@
+<div>
+  <behaviour-table></behaviour-table>
+  <hr/>
+  <div class="justify-content-left">
+    <form [formGroup]="pageForm" style="display: inline-block;">
+      <div>
+        <mat-form-field appearance="outline" style="width: 100%">
+          <mat-label>Page Number</mat-label>
+          <input matInput formControlName="pageNumber">
+        </mat-form-field>
+      </div>
+
+      <div id="controls" class="row">
+        <button
+          mat-button
+          style="width: 100%"
+          [disabled]="pageForm.invalid"
+          (click)="submitPage()"
+          mat-flat-button
+          color="primary"
+        >
+          Enter
+        </button>
+      </div>
+    </form>
+
+    <div style="display: inline-block;">
+      <p class="button-info" style="font-size: 18px; margin-top: 10px; width: 100%">
+        {{pageGuests}}
+      </p>
+    </div>
+  </div>
+
+  <br/>
+  <br/>
+
+  <div class="justify-content-left">
+    <form [formGroup]="buttonForm" style="display: inline-block;">
+      <div>
+        <mat-form-field appearance="outline" style="width: 100%">
+          <mat-label>Button Number</mat-label>
+          <input matInput formControlName="buttonNumber">
+        </mat-form-field>
+      </div>
+
+      <div class="row">
+        <button
+          mat-button
+          style="width: 100%"
+          [disabled]="buttonForm.invalid"
+          (click)="submitButtons()"
+          mat-flat-button
+          color="primary"
+        >
+          Enter
+        </button>
+      </div>
+    </form>
+
+    <div style="display: inline-block;">
+      <p class="button-info" style="font-size: 18px; margin-top: 10px; width: 100%">
+        {{buttonClicks}}
+      </p>
+    </div>
+  </div>
+</div>

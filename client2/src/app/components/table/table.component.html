@@ -1,0 +1,22 @@
+<table>
+  <thead>
+  <tr>
+    <th>Номер страницы</th>
+    <th>Количество посещений</th>
+    <th></th>
+    <th>Номер кнопки</th>
+    <th>Количество нажатий</th>
+  </tr>
+  </thead>
+  <tbody>
+  <ng-container *ngFor="let index of pageNumbers.length >= buttonNumbers.length ? pageNumbers : buttonNumbers; let i = index;">
+    <tr>
+      <td>{{ pageNumbers[i] || '' }}</td>
+      <td>{{ visitCounts[i] || '' }}</td>
+      <td></td>
+      <td>{{ buttonNumbers[i] || '' }}</td>
+      <td>{{ clickCounts[i] || '' }}</td>
+    </tr>
+  </ng-container>
+  </tbody>
+</table>

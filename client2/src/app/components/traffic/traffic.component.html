@@ -1,0 +1,41 @@
+<div class="two-columns">
+  <div class="column">
+    <p>Среднее время сеанса</p>
+    <p>Самое активное время</p>
+  </div>
+  <div class="column">
+    <p >{{ avgTime }}</p>
+    <p>{{ mostActiveTime }}</p>
+  </div>
+</div>
+<hr/>
+
+<div class="justify-content-left">
+  <form [formGroup]="userForm" style="display: inline-block;">
+    <div>
+      <mat-form-field appearance="outline" style="width: 100%">
+        <mat-label>username</mat-label>
+        <input matInput formControlName="username">
+      </mat-form-field>
+    </div>
+
+    <div id="controls" class="row">
+      <button
+        mat-button
+        style="width: 100%"
+        [disabled]="userForm.invalid"
+        (click)="submit()"
+        mat-flat-button
+        color="primary"
+      >
+        Enter
+      </button>
+    </div>
+  </form>
+
+  <div style="display: inline-block;">
+    <p class="user-info" style="font-size: 10px; margin-top: 10px; width: 100%" *ngFor="let item of arr">
+      {{ item.enterTime }} &#8212; {{item.exitTime}}
+    </p>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  postgres:
+    image: 'postgres:latest'
+    container_name: 'OMIS'
+    ports:
+      - 5437:5432
+    environment:
+      - 'POSTGRES_USER=aleshkey'
+      - 'POSTGRES_PASSWORD=lEsha6012004'
+      - 'POSTGRES_HOST_AUTH_METHOD=trust'
+      - 'POSTGRES_DB=OMIS_DB'

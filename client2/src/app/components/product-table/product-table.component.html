@@ -1,0 +1,20 @@
+<table>
+  <thead>
+  <tr>
+    <th>Номер Товара</th>
+    <th>Количество породаж</th>
+    <th>Количество просмотров</th>
+    <th>Конверсия</th>
+  </tr>
+  </thead>
+  <tbody>
+  <ng-container *ngFor="let product of products">
+    <tr>
+      <td>{{product.id}}</td>
+      <td>{{product.numberOfSold}}</td>
+      <td>{{product.numberOfGuests}}</td>
+      <td>{{product.conversionRate}}</td>
+    </tr>
+  </ng-container>
+  </tbody>
+</table>

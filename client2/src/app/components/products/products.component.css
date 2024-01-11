@@ -1,0 +1,31 @@
+hr{
+  margin-top: -2px;
+}
+
+.rectangle-container {
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.rectangle {
+  display: inline-block;
+  width: 100px;
+  height: 50px;
+  background-color: #3f51b4;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+}
+
+.text {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

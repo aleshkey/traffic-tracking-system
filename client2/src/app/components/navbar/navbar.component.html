@@ -1,0 +1,12 @@
+<mat-toolbar color="primary" class="navbar">
+  <div class="spacer"></div>
+  <div class="nav-buttons">
+    <button mat-button routerLink="/traffic" [ngClass]="{ 'active': selectedLink === '/traffic' }"
+            (click)="setSelectedLink('/traffic')">Трафик</button>
+    <button mat-button routerLink="/behaviour" [ngClass]="{ 'active': selectedLink === '/behaviour' }"
+            (click)="setSelectedLink('/behaviour')">Поведение</button>
+    <button mat-button routerLink="/products" [ngClass]="{ 'active': selectedLink === '/products' }"
+            (click)="setSelectedLink('/products')">Продажи</button>
+  </div>
+  <div class="spacer"></div>
+</mat-toolbar>
